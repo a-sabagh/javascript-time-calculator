@@ -38,7 +38,7 @@ export default class CalculatorLogic {
 	plus(x,y){
 		let xSeconds = parseInt(this.getSeconds(x))
 		let ySeconds = parseInt(this.getSeconds(y))
-		return this.getTimeArray(xSeconds+ySeconds)
+		return this.getTimeArray(parseInt(xSeconds+ySeconds))
 	}
 
 	minus(x,y){
@@ -55,10 +55,13 @@ export default class CalculatorLogic {
 	}
 
 	getTimeArray(seconds){
+		let hour = parseInt(Math.floor(seconds / 3600))
+		let minute = parseInt(Math.floor(seconds % 3600 / 60))
+		let second = parseInt(seconds % 3600 % 60)
 		return [
-			this.formatNumber(parseInt(seconds/(60*60))),
-			this.formatNumber(parseInt(seconds/60)),
-			this.formatNumber(parseInt(seconds%60)),
+			this.formatNumber(hour),
+			this.formatNumber(minute),
+			this.formatNumber(second),
 		]
 	}
 	
