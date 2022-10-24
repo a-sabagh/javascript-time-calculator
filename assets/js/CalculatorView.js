@@ -61,12 +61,10 @@ export default class CalculatorView {
 
 	handleEqual(event){
 		event.preventDefault()
-		this.#timeString = ''
-		if(this.#timeArray){
-			this.#calculatorLogic.addTimeItem(this.#timeArray)
-			this.#timeArray = null
-		}
 		let result = this.#calculatorLogic.calculate()
+		this.#timeString = ''
+		this.#timeArray = null
+		this.#calculatorLogic.addTimeItem(result)
 		if(result){
 			this.updateScreen(result.join(' : '))
 		}
