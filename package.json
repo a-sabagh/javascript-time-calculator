@@ -17,7 +17,9 @@
     "url": "https://github.com/a-sabagh/javascript-time-calculator/issues"
   },
   "homepage": "https://github.com/a-sabagh/javascript-time-calculator#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@fontsource/orbitron": "^4.5.10"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
