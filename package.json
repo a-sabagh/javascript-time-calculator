@@ -19,6 +19,9 @@
   "homepage": "https://github.com/a-sabagh/javascript-time-calculator#readme",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "css-loader": "^6.7.2",
     "mini-css-extract-plugin": "^2.7.0",
     "webpack": "^5.75.0",
