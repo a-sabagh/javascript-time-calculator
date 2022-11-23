@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Javascript Calculator</title>
-	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="assets/css/master.css">
+	<title><%= htmlWebpackPlugin.options.loader %></title>
 </head>
 <body>
 	<h1>Time Calculator</h1>
@@ -39,8 +37,5 @@
 			<td><a href="#" data-operator="equal" class="operator" onclick="calculatorObject.handleEqual(event)">=</a></td>
 		</tr>
 	</table>
-	<script type="module" src="./assets/js/CalculatorView.js"></script>
-	<script type="module" src="./assets/js/CalculatorLogic.js"></script>
-	<script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>
