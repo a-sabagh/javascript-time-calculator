@@ -1,4 +1,4 @@
-# JavaScript Calculator
+# JavaScript Time Calculator
 
 A simple web-based time calculator built with JavaScript, HTML, and CSS.
 
