@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: web
+    networks:
+      - js_time_cal_net
+    ports:
+      - 8888:80
+    restart: unless-stopped
+    container_name: js_time_calculator_cnt
+
+networks:
+  js_time_cal_net: {}
