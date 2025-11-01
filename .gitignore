@@ -2,7 +2,6 @@
 **/dist/
 **/build/
 **/package-lock.json
-**/README.md
 **/nohup.out
 **/*.swp
 
