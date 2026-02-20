@@ -14,18 +14,11 @@ docker compose up -d
 
 2. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-## 📦 Build Image and Run Container
+## 📦 Build Image and Run Container From Docker Hub
 
 1. Build the Docker image:
    
    ```bash
-   docker image build -t js-time-calculator .
+   docker container run -d -p 8080:80 sabagh/js-time-calculator .
    ```
-
-2. Run the container:
-   
-   ```bash
-   docker container run -d --name js-time-cal -p 8080:80 js-time-calculator
-   ```
-
-3. Open [http://localhost:8080](http://localhost:8080) in your browser.
+2. Open [http://localhost:8080](http://localhost:8080) in your browser.
